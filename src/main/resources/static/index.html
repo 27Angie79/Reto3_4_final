@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reto 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFuncionesCategoria.js"></script>
+    <script type="text/javascript" src="js/misFuncionesCliente.js"></script>
+    <script type="text/javascript" src="js/misFuncionesCostume.js"></script>
+    <script type="text/javascript" src="js/misFunciones Mensaje.js"></script>
+    <script type="text/javascript" src="js/mis FuncionesReservaciones.js"></script>
+    <!-- boostrap librerias necesarias
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      -->
+</head>
+
+<body>
+    <h1>Categorias</h1>
+    <div id="resultado1"></div>
+    <button onclick="traerInformacionCategorias()"> Consultar Categorias</button>
+    <!-- ejemplo boton con bootstrap <div class="container">
+      <button type="button" class="btn btn-primary">Consultar Categorias</button>
+    </div>-->
+    <div>
+        <input type="text" id="Cname" placeholder="name">
+        <input type="text" id="Cdescription" placeholder="description">
+        <input type="hidden" id="Cid" placeholder="id">
+
+    </div>
+
+    <button onclick="guardarInformacionCategorias()"> Guardar Categorias</button>
+    <button onclick="actualizarInformacionCategorias()"> Actualizar Categorias</button>
+    
+
+
+    <h1>Costumes</h1>
+    <div id="resultado2"></div>
+    <button onclick="traerInformacionCostumes()"> Consultar Costumes</button>
+
+    <div>
+        <input type="text" id="COname" placeholder="name">
+        <input type="text" id="CObrand" placeholder="brand">
+        <input type="number" id="COyear" placeholder="year">
+        <input type="text" id="COdescription" placeholder="description">
+        <input type="hidden" id="COid" placeholder="id">
+    </div>
+    <button onclick="guardarInformacionCostumes()"> Guardar Costumes</button>
+    <button onclick="actualizarInformacionCostumes()"> Actualizar Costumes</button>
+    
+
+
+    <h1>Cliente</h1>
+    <div id="resultado3"></div>
+    <button onclick="traerInformacionClientes()"> Consultar Clientes</button>
+
+    <div>
+        <input type="email" id="CLemail" placeholder="email">
+        <input type="password" id="CLpassword" placeholder="password">
+        <input type="text" id="CLname" placeholder="name">
+        <input type="number" id="CLage" placeholder="age">
+        <input type="hidden" id="CLid" placeholder="id">
+    
+      </div>
+    <button onclick="guardarInformacionClientes()"> Guardar Clientes</button>
+    <button onclick="actualizarInformacionClientes()"> Actualizar Clientes</button>
+    
+
+
+    <h1>Mensaje</h1>
+    <div id="resultado4"></div>
+    <button onclick="traerInformacionMensajes()"> Consultar Mensajes</button>
+
+    <div>
+        <input type="text" id="MmessageText" placeholder="messageText">
+        <input type="hidden" id="Mid" placeholder="id">
+                 
+      </div>
+    <button onclick="guardarInformacionMensajes()"> Guardar Mensajes</button>
+    <button onclick="actualizarInformacionMensajes()"> Actualizar Mensajes</button>
+ 
+    
+    
+    <h1>Reservaciones</h1>
+    <div id="resultado5"></div>
+    <button onclick="traerInformacionReservaciones()"> Consultar Reservaciones</button>
+
+    <div>
+        <input type="datetime" id="RstartDate" placeholder="startDate">
+        <input type="datetime" id="RdevolutionDate" placeholder="devolutionDate">
+        <input type="hidden" id="Rid" placeholder="id">   
+           
+      </div>
+    <button onclick="guardarInformacionReservaciones()"> Guardar Reservaciones</button>
+    <button onclick="actualizarInformacionReservaciones()"> Actualizar Reservaciones</button>
+   
+
+
+</body>
+</html>
